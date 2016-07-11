@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GCDTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-kN-1Ta">
+                                <rect key="frame" x="155" y="84" width="291" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="Cky-ta-8X9"/>
+                                    <constraint firstAttribute="height" constant="62" id="O7R-kt-Ynp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7le-tC-XxU">
+                                <rect key="frame" x="155" y="234" width="291" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="ENQ-8d-4Um"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ov6-kN-1Ta" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="DDw-Ds-m6u"/>
+                            <constraint firstItem="7le-tC-XxU" firstAttribute="trailing" secondItem="Ov6-kN-1Ta" secondAttribute="trailing" id="Hhm-Vb-W0p"/>
+                            <constraint firstItem="7le-tC-XxU" firstAttribute="leading" secondItem="Ov6-kN-1Ta" secondAttribute="leading" id="tUC-T9-olT"/>
+                            <constraint firstItem="7le-tC-XxU" firstAttribute="top" secondItem="Ov6-kN-1Ta" secondAttribute="bottom" constant="88" id="v8E-DA-118"/>
+                            <constraint firstItem="Ov6-kN-1Ta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zdl-zf-rEI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="7le-tC-XxU" id="hbA-bW-Soh"/>
+                        <outlet property="label" destination="Ov6-kN-1Ta" id="qrY-2B-cEX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="321"/>
+        </scene>
+    </scenes>
+</document>
